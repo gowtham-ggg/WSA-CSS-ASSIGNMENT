@@ -1,0 +1,77 @@
+/* Style for the main container */
+.main-container {
+    width: 80%;  /* Reduce the width */
+    max-width: 1200px;  /* Maximum width for larger screens */
+    margin: 0 auto;  /* Center the main container */
+    padding: 20px;  
+    margin-top: 20px;
+}
+
+/* Style for the grid container */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, auto);
+    gap: 10px;
+}
+
+/* Individual grid items */
+.grid-item {
+    background-color: #61a5c2;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+}
+
+/* Specific grid items' positions and spans */
+.photoshop {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.invision, .ux {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.design {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.javascript {
+    grid-column: span 2;
+}
+
+.layout {
+    grid-column: span 1;
+}
+
+.webdev {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+.php, .html, .ruby, .css, .go {
+    grid-column: span 1;
+}
+
+.motion {
+    grid-column: span 2;
+    grid-row: span 2;
+    background-color: #9c27b0;
+}
+
+.maya, .nuke, .cinema4d, .aftereffects {
+    background-color: #673ab7;
+    grid-column: span 1;
+}
+
+/* Additional styling for better appearance */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
