@@ -1,77 +1,36 @@
-/* Style for the main container */
-.main-container {
-    width: 80%;  /* Reduce the width */
-    max-width: 1200px;  /* Maximum width for larger screens */
-    margin: 0 auto;  /* Center the main container */
-    padding: 20px;  
-    margin-top: 20px;
+* {
+    margin-top: 5px;
+    padding: 0;
+    background-color: lightgray;
 }
 
-/* Style for the grid container */
-.grid-container {
+.container {
+    width: 800px;
+    height: 750px;
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: repeat(5, auto);
-    gap: 10px;
-}
-
-/* Individual grid items */
-.grid-item {
-    background-color: #61a5c2;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    gap: 5px;
+    background-color: rgb(211, 211, 211);
     color: white;
-    text-align: center;
-    padding: 20px;
-    font-size: 18px;
-    font-family: Arial, sans-serif;
+    margin-left: 500px;
 }
 
-/* Specific grid items' positions and spans */
-.photoshop {
-    grid-column: span 2;
-    grid-row: span 2;
-}
-
-.invision, .ux {
-    grid-column: span 1;
-    grid-row: span 2;
-}
-
-.design {
-    grid-column: span 3;
-    grid-row: span 2;
-}
-
-.javascript {
-    grid-column: span 2;
-}
-
-.layout {
-    grid-column: span 1;
-}
-
-.webdev {
-    grid-column: span 3;
-    grid-row: span 2;
-}
-
-.php, .html, .ruby, .css, .go {
-    grid-column: span 1;
-}
-
-.motion {
-    grid-column: span 2;
-    grid-row: span 2;
-    background-color: #9c27b0;
-}
-
-.maya, .nuke, .cinema4d, .aftereffects {
-    background-color: #673ab7;
-    grid-column: span 1;
-}
-
-/* Additional styling for better appearance */
-body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
-}
-
+.photoshop { grid-column: 1 / 2; grid-row: 1 / 2; background-color: #17a3b4; }
+.invision { grid-column: 2 / 3; grid-row: 1 / 2; background-color: #17a3b4; }
+.ux { grid-column: 3 / 4; grid-row: 1 / 2; background-color: #17a3b4; }
+.design { grid-column: 2 / 4; grid-row: 2 / 4; background-color: #17a3b4; }
+.javascript { grid-column: 2 / 2; grid-row: 4 / 5; background-color: #248c88; }
+.layout { grid-column: 3 / 3; grid-row: 4 / 5; background-color: #17a3b4; }
+.ruby { grid-column: 2 / 2; grid-row: 5 / 6; background-color: #167976; }
+.go { grid-column: 2 / 2; grid-row: 6 / 7; background-color: #167976; }
+.css { grid-column: 3 / 3; grid-row: 5 / 6; background-color: #167976; }
+.webdev { grid-column: 4 / 6; grid-row: 4 / 6; background-color: #167976; }
+.php { grid-column: 4 / 5; grid-row: 3 / 4; background-color: #167976; }
+.html { grid-column: 5 / 6; grid-row: 3 / 4; background-color: #167976; }
+.rust { grid-column: 5 / 6; grid-row: 2 / 3; background-color: #167976; }
+.motion { grid-column: 3 / 5; grid-row: 6 / 7; background-color: #3b4898; }
+.maya { grid-column: 5 / 6; grid-row: 6 / 7; background-color: #3b4898; }
+.nuke { grid-column: 6 / 7; grid-row: 6 / 7; background-color: #3b4898; }
+.cinema4d { grid-column: 5 / 6; grid-row: 7 / 9; background-color: #3b4898; }
+.aftereffects { grid-column: 4 / 5; grid-row: 7 / 8; background-color: #3b4898; }
