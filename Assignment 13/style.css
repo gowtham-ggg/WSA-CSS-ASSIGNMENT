@@ -75,7 +75,11 @@ nav ul li a {
     align-items: center;
     gap: 15px; /* Flex gap between image and text */
 }
-.dash:hover{
+.dash-board a{
+    text-decoration: none;
+    color: #434347;
+}
+.dash-board a:hover{
     background-color: white;
     color: black;
 }
