@@ -82,6 +82,7 @@ body {
     border-radius: 8px;
     border: 1px solid #ff3399;
     margin-top: 20px; 
+    width: 300px;
 }
 
 .year-container {
@@ -110,4 +111,16 @@ body {
 }
 .content-left{
     text-align: left;
+}
+
+.arrow-symb{
+   
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.fa-solid{
+    color: #ff3399;
 }
